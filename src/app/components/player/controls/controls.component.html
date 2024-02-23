@@ -1,15 +1,32 @@
-<div class="flex justify-center gap-4">
+<div class="flex justify-center items-center gap-6">
 
-    <span class="text-neutral-500 flex justify-center items-center w-4 h-4 p-5 rounded-full">
+    <!-- SHUFFLE -->
+    <button class="text-neutral-500 flex justify-center items-center size-6 rounded-full text-lg
+        hover:text-neutral-200">
+        <fa-icon [icon]="faShuffle"></fa-icon>
+    </button>
+
+    <!-- PREVIOUS -->
+    <button class="text-neutral-500 flex justify-center items-center size-6 rounded-full text-lg
+        hover:text-neutral-200">
         <fa-icon [icon]="faBackwardStep"></fa-icon>
-    </span>
+    </button>
 
-    <span class="bg-neutral-500 text-black flex justify-center items-center w-4 h-4 p-5 rounded-full">
+    <!-- PLAY -->
+    <button class="bg-neutral-200 text-black flex justify-center items-center size-3 p-5 rounded-full">
         <fa-icon [icon]="faPlay"></fa-icon>
-    </span>
+    </button>
 
-    <span class="text-neutral-500 flex justify-center items-center w-4 h-4 p-5 rounded-full">
+    <!-- NEXT -->
+    <button class="text-neutral-500 flex justify-center items-center size-6 rounded-full text-lg
+        hover:text-neutral-200">
         <fa-icon [icon]="faForwardStep"></fa-icon>
-    </span>
+    </button>
+
+    <!-- REPEAT -->
+    <button class="text-neutral-500 flex justify-center items-center size-6 rounded-full text-lg
+        hover:text-neutral-200">
+        <fa-icon [icon]="faRepeat"></fa-icon>
+    </button>
 
 </div>
