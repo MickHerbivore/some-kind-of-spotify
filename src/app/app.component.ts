@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { PlayerComponent } from './components/player/player.component';
+import { PlayerComponent } from './components/playing-bar/player/player.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MainComponent } from './components/main/main.component';
+import { PlayingBarComponent } from './components/playing-bar/playing-bar.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import { MainComponent } from './components/main/main.component';
   imports: [
     CommonModule, 
     RouterOutlet, 
-    PlayerComponent,
+    PlayingBarComponent,
     SidenavComponent,
     MainComponent
   ],
