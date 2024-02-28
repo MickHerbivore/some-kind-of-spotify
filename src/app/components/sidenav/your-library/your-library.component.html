@@ -1,0 +1,21 @@
+<div class="bg-indigo-950 bg-opacity-30 rounded-xl px-6 py-4 text-md text-neutral-400 font-semibold flex justify-between">
+    <button type="button" class="flex items-center gap-5
+        hover:text-neutral-100 transition-colors ease-linear delay-200"
+        [tooltip]="'Collapse Yor Library'">
+        <fa-icon [icon]="faCompactDisc" class="text-xl"></fa-icon>
+        Your Library
+    </button>
+    <div class="flex gap-4">
+        <button id="create-playlist-btn" type="button" class="text-xl
+            hover:text-neutral-100 transition-colors ease-linear delay-200"
+            [tooltip]="'Create playlist or folder'">
+            <fa-icon [icon]="faPlus"></fa-icon>
+        </button>
+        <button id="show-more-btn" type="button" class="text-xl 
+            hover:text-neutral-100 transition-colors ease-linear delay-200"
+            [tooltip]="'Show more'">
+            <fa-icon [icon]="faArrowRight"></fa-icon>
+        </button>
+    </div>
+    
+</div>
