@@ -1,10 +1,14 @@
 <div class="bg-neutral-700 bg-opacity-30 rounded-xl px-6 py-4 text-md text-neutral-400 font-medium flex justify-between">
-    <button type="button" class="flex items-center gap-5
-        hover:text-neutral-100 transition-colors ease-linear delay-200 "
-        [tooltip]="'Collapse Yor Library'">
-        <fa-icon [icon]="faCompactDisc" class="text-xl"></fa-icon>
-        Your Library
-    </button>
+    <div class="flex">
+        <button type="button" class="
+            hover:text-neutral-100 transition-colors ease-linear delay-200 "
+            [tooltip]="'Collapse Yor Library'">
+            <span class="flex items-center gap-5">
+                <fa-icon [icon]="faCompactDisc" class="text-xl"></fa-icon>
+                Your Library
+            </span>
+        </button>
+    </div>
     <div class="flex gap-2">
         <button id="create-playlist-btn" type="button" class="size-8 text-xl rounded-full
             hover:text-neutral-50 transition-colors ease-linear delay-200 hover:bg-neutral-600/10"
