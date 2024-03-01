@@ -1,0 +1,45 @@
+<div class="py-4 relative flex">
+    <div #optionsContainer class="text-nowrap flex gap-2 flex-nowrap overflow-hidden relative"
+        (mousedown)="onMouseDown($event)" (mousemove)="onMouseMove($event)">
+        
+    
+        <button type="button" class="px-3 py-1.5 bg-neutral-800 text-neutral-100 font-normal text-sm rounded-full
+            hover:bg-neutral-700 transition-colors ease-linear">
+            Playlists
+        </button>
+    
+        <button type="button" class="px-3 py-1.5 bg-neutral-800 text-neutral-100 font-normal text-sm rounded-full
+            hover:bg-neutral-700 transition-colors ease-linear">
+            Artists
+        </button>
+    
+        <button type="button" class="px-3 py-1.5 bg-neutral-800 text-neutral-100 font-normal text-sm rounded-full
+            hover:bg-neutral-700 transition-colors ease-linear">
+            Albums
+        </button>
+    
+        <button type="button" class="px-3 py-1.5 bg-neutral-800 text-neutral-100 font-normal text-sm rounded-full
+        hover:bg-neutral-700 transition-colors ease-linear">
+            Podcasts & Shows
+        </button>
+    </div>
+
+    <div class="flex justify-between h-full w-full absolute pointer-events-none">
+        @if (showLeftArrow) {
+            <span class="h-full w-1/4 absolute left-0 bg-gradient-to-r from-neutral-900 rounded-none"></span>
+            <button type="button" class="size-8 absolute left-0 bg-neutral-800 text-neutral-100 rounded-full z-20
+                hover:bg-neutral-700 transition-colors ease-linear">
+                <fa-icon [icon]="faChevronLeft" class="text-xl"></fa-icon>
+            </button>
+        }
+    
+        @if (showRigthArrow) {
+            <span class="h-full w-1/4 absolute right-0 bg-gradient-to-r from-transparent to-neutral-900 rounded-none"></span>
+            <button type="button" class="size-8 absolute right-0 bg-neutral-800 text-neutral-100 rounded-full z-20
+                hover:bg-neutral-700 transition-colors ease-linear">
+                <fa-icon [icon]="faChevronRight" class="text-xl"></fa-icon>
+            </button>
+        }
+    </div>
+</div>
+
