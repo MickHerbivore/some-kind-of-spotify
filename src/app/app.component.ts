@@ -1,20 +1,17 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PlayerComponent } from './components/playing-bar/player/player.component';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
-import { MainComponent } from './components/main/main.component';
-import { PlayingBarComponent } from './components/playing-bar/playing-bar.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LoginComponent } from './pages/login/login.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     CommonModule, 
-    RouterOutlet, 
-    PlayingBarComponent,
-    SidenavComponent,
-    MainComponent
+    RouterOutlet,
+    HomeComponent,
+    LoginComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
