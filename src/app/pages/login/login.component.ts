@@ -1,6 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { LoginService } from '../../services/login.service';
-import { Subscription } from 'rxjs';
+import { Component, OnInit, inject } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -12,10 +11,11 @@ import { Subscription } from 'rxjs';
 export class LoginComponent implements OnInit {
 
   public authUrl: string = '';
-
-  constructor( private loginService: LoginService ) { }
+  private loginService: AuthService = inject(AuthService);
+  
 
   ngOnInit(): void {
+    localStorage.clear();
     this.authUrl = this.loginService.getAuthUrl();
   }
 

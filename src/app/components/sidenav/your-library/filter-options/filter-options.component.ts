@@ -24,9 +24,12 @@ export class FilterOptionsComponent implements AfterViewInit {
 
   
   ngAfterViewInit(): void {
-    this.container.nativeElement.scrollTop = 0;
-    this.container.nativeElement.scrollLeft = 0;
-    this.showRigthArrow = this.container.nativeElement.scrollWidth - this.container.nativeElement.scrollLeft != this.container.nativeElement.clientWidth;
+    setTimeout(() => {
+      this.container.nativeElement.scrollTop = 0;
+      this.container.nativeElement.scrollLeft = 0;
+      this.showRigthArrow = this.container.nativeElement.scrollWidth - this.container.nativeElement.scrollLeft != this.container.nativeElement.clientWidth;
+    }, 0);
+
   }
 
   onMouseDown(event: MouseEvent): void {
